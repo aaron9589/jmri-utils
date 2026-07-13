@@ -5,7 +5,7 @@
 #   python2 test_parser.py
 #   jython test_parser.py
 
-from trainstat_parser import parse_line
+from trainstat_mqtt import parse_line
 
 
 def check(label, line, state, expected):

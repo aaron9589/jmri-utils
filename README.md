@@ -4,14 +4,13 @@ A JMRI Jython script that connects to a [CATS](https://sites.google.com/site/cat
 
 ## Files
 
-- `trainstat_parser.py` — pure protocol parser (`parse_line`). No JMRI imports, no I/O.
-- `test_parser.py` — assert-based test for the parser. Run with `python2 test_parser.py` or `jython test_parser.py`.
-- `trainstat_mqtt.py` — JMRI-loadable entry script. Owns the CATS socket, the MQTT client (Paho, bundled with JMRI), and the reader thread lifecycle. Calls into `trainstat_parser.parse_line` for all parsing.
+- `trainstat_mqtt.py` — the whole thing, single file. The top section is a pure protocol parser (`parse_line`, no JMRI imports, no I/O); the bottom section is the JMRI harness that owns the CATS socket, the MQTT client (Paho, bundled with JMRI), and the reader thread lifecycle, and calls `parse_line` for all parsing. Single file because JMRI's Jython engine runs scripts via `eval()` — no `__file__`, and no reliable way to resolve a sibling module on `sys.path`.
+- `test_parser.py` — assert-based test for `parse_line`. Run with `python2 test_parser.py` or `jython test_parser.py`; works without JMRI since the java/Paho imports in `trainstat_mqtt.py` are guarded and skipped when unavailable.
 
 ## Usage
 
-1. Copy `trainstat_parser.py` and `trainstat_mqtt.py` into the same directory JMRI will load scripts from.
-2. Edit the config constants at the top of `trainstat_mqtt.py` (`CATS_HOST`, `CATS_PORT`, `MQTT_HOST`, `MQTT_PORT`, etc.) for your layout.
+1. Copy `trainstat_mqtt.py` into the directory JMRI will load scripts from.
+2. Edit the config constants at the top (`CATS_HOST`, `CATS_PORT`, `MQTT_HOST`, `MQTT_PORT`, etc.) for your layout.
 3. Load `trainstat_mqtt.py` via *Panels → Run Script*, or add it to Preferences → Start Up for auto-start.
 4. Call `stop()` from the JMRI script console before reloading/removing the script.
 
