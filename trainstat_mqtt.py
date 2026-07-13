@@ -15,9 +15,16 @@ import os
 import sys
 import threading
 
-_here = os.path.dirname(os.path.abspath(__file__))
-if _here not in sys.path:
-    sys.path.append(_here)
+try:
+    # Best-effort: make sure this script's directory is importable.
+    _here = os.path.dirname(os.path.abspath(__file__))
+    if _here not in sys.path:
+        sys.path.append(_here)
+except NameError:
+    # JMRI's Jython engine runs scripts via eval(), which never binds
+    # __file__. Fall back to JMRI's default jython script folder already
+    # being on sys.path -- trainstat_parser.py just needs to live there too.
+    pass
 
 import trainstat_parser
 
