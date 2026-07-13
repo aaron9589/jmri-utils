@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/panelfile-5-5-5.xsl" type="text/xsl"?>
+<layout-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/layout-5-5-5.xsd">
+  <jmriversion>
+    <major>5</major>
+    <minor>14</minor>
+    <test>0</test>
+    <modifier />
+  </jmriversion>
+  <signalmasts class="jmri.managers.configurexml.DefaultSignalMastManagerXml">
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($BOM-44.3)</systemName>
+      <userName>BOM-44.3</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($BOM-44.6)</systemName>
+      <userName>BOM-44.6</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($BOM-44.7)</systemName>
+      <userName>BOM-44.7</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($BOM-44.25)</systemName>
+      <userName>BOM-44.25</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($BOM-44.26)</systemName>
+      <userName>BOM-44.26</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($BOM-44.27)</systemName>
+      <userName>BOM-44.27</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($BOM-44.28)</systemName>
+      <userName>BOM-44.28</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KH1)</systemName>
+      <userName>KH1</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KH2)</systemName>
+      <userName>KH2</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KH3)</systemName>
+      <userName>KH3</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.4)</systemName>
+      <userName>KIA-45.4</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.5)</systemName>
+      <userName>KIA-45.5</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.6)</systemName>
+      <userName>KIA-45.6</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.8)</systemName>
+      <userName>KIA-45.8</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.10)</systemName>
+      <userName>KIA-45.10</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.25)</systemName>
+      <userName>KIA-45.25</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.26)</systemName>
+      <userName>KIA-45.26</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.27)</systemName>
+      <userName>KIA-45.27</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.28)</systemName>
+      <userName>KIA-45.28</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-42.0)</systemName>
+      <userName>KJN-42.0</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-42.3)</systemName>
+      <userName>KJN-42.3</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-42.7)</systemName>
+      <userName>KJN-42.7</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-42.25)</systemName>
+      <userName>KJN-42.25</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-42.26)</systemName>
+      <userName>KJN-42.26</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-42.27)</systemName>
+      <userName>KJN-42.27</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-42.28)</systemName>
+      <userName>KJN-42.28</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KJN-91.0)</systemName>
+      <userName>KJN-91.0</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Balloon Loop Down Departure)</systemName>
+      <userName>Staging/Balloon Loop Down Departure</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Siding 1 Starter)</systemName>
+      <userName>Staging/Down Siding 1 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Siding 2 Starter)</systemName>
+      <userName>Staging/Down Siding 2 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Siding 3 Starter)</systemName>
+      <userName>Staging/Down Siding 3 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Track 1 Starter)</systemName>
+      <userName>Staging/Down Track 1 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Track 2 Starter)</systemName>
+      <userName>Staging/Down Track 2 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Track 3 Starter)</systemName>
+      <userName>Staging/Down Track 3 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Track 4 Starter)</systemName>
+      <userName>Staging/Down Track 4 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Up Siding 1 Starter)</systemName>
+      <userName>Staging/Up Siding 1 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Up Siding 2 Starter)</systemName>
+      <userName>Staging/Up Siding 2 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Up Siding 3 Starter)</systemName>
+      <userName>Staging/Up Siding 3 Starter</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Staging 3)</systemName>
+      <userName>Staging/Down Staging 3</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Staging 2)</systemName>
+      <userName>Staging/Down Staging 2</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Staging 1)</systemName>
+      <userName>Staging/Down Staging 1</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Up Accept 4)</systemName>
+      <userName>Staging/Up Accept 4</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+      <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Up Accept 3)</systemName>
+      <userName>Staging/Up Accept 3</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Up Accept 2)</systemName>
+      <userName>Staging/Up Accept 2</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Up Accept 1)</systemName>
+      <userName>Staging/Up Accept 1</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+     <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($Staging/Down Main Approach)</systemName>
+      <userName>Staging/Down Main Approach</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+  </signalmasts>
+  <signalmastlogics class="jmri.managers.configurexml.DefaultSignalMastLogicManagerXml">
+    <logicDelay>500</logicDelay>
+  </signalmastlogics>
+  <filehistory>
+    <operation>
+      <type>app</type>
+      <date>Mon Apr 27 18:04:27 AEST 2026</date>
+      <filename>PanelPro (v5.14.0)</filename>
+    </operation>
+    <operation>
+      <type>Load OK</type>
+      <date>Mon Apr 27 18:04:29 AEST 2026</date>
+      <filename>/home/operations/OneDrive_hello@illawarraline.net/Documents/JMRI/MQTT_CATS.jmri/masts.xml</filename>
+      <filehistory>
+        <operation>
+          <type>app</type>
+          <date>Mon Nov 20 15:48:26 AEDT 2023</date>
+          <filename>JMRI program</filename>
+        </operation>
+        <operation>
+          <type>Store</type>
+          <date>Mon Nov 20 16:07:31 AEDT 2023</date>
+          <filename />
+        </operation>
+      </filehistory>
+    </operation>
+    <operation>
+      <type>Store</type>
+      <date>Mon Apr 27 18:05:01 AEST 2026</date>
+      <filename>/home/operations/OneDrive_hello@illawarraline.net/Documents/JMRI/MQTT_CATS.jmri/masts.xml</filename>
+    </operation>
+  </filehistory>
+  <!--Written by JMRI version 5.14+Rdea51dcccf on Mon Apr 27 18:05:01 AEST 2026-->
+</layout-config>
