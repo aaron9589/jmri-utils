@@ -11,20 +11,16 @@
 # Uses the Paho MQTT client bundled with JMRI directly (rather than a JMRI
 # MQTT connection profile) for explicit per-publish retain control.
 
-import os
 import sys
 import threading
 
-try:
-    # Best-effort: make sure this script's directory is importable.
-    _here = os.path.dirname(os.path.abspath(__file__))
-    if _here not in sys.path:
-        sys.path.append(_here)
-except NameError:
-    # JMRI's Jython engine runs scripts via eval(), which never binds
-    # __file__. Fall back to JMRI's default jython script folder already
-    # being on sys.path -- trainstat_parser.py just needs to live there too.
-    pass
+# Directory containing trainstat_parser.py. JMRI's Jython engine runs
+# scripts via eval(), not execfile(), so there is no __file__ to derive this
+# from -- set it to match wherever you placed both files.
+SCRIPT_DIR = "/home/operations/documents/git repo"
+
+if SCRIPT_DIR and SCRIPT_DIR not in sys.path:
+    sys.path.append(SCRIPT_DIR)
 
 import trainstat_parser
 
