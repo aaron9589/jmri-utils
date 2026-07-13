@@ -19,6 +19,5 @@ forced back to it.
 - The listener fires on every speed change, so the clamp is instant -- the
   poll only exists to discover new throttles.
 - Emergency stop (negative speed) is left untouched.
-
-Requires JMRI's default jython setting `respectJavaAccessibility=false`
-(you have it unless you deliberately changed it).
+- The WiThrottle server's throttle lists are package-private, so they're
+  read via reflection -- no JMRI settings changes needed.

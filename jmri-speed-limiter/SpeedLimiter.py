@@ -5,10 +5,11 @@
 # above the limit back down to the limit.
 #
 # Run from Scripting > Run Script, or add to JMRI startup actions.
-# Requires JMRI's default jython setting respectJavaAccessibility=false
-# (it is the default) to reach the WiThrottle server's internal fields.
+# Uses reflection to reach the WiThrottle server's package-private fields,
+# so it works whether or not respectJavaAccessibility is set.
 
 import java
+import java.lang
 import java.util
 import java.beans
 import java.awt.event
@@ -36,6 +37,21 @@ class SpeedClamp(java.beans.PropertyChangeListener):
 _clamp = SpeedClamp()
 
 
+def _get(obj, name):
+    # read a package-private field via reflection, walking up superclasses
+    # (e.g. MultiThrottleController inherits 'throttle' from ThrottleController)
+    cls = obj.getClass()
+    while cls is not None:
+        try:
+            field = cls.getDeclaredField(name)
+        except java.lang.NoSuchFieldException:
+            cls = cls.getSuperclass()
+            continue
+        field.setAccessible(True)
+        return field.get(obj)
+    return None
+
+
 def _hook(throttle):
     if throttle is None or _seen.containsKey(throttle):
         return
@@ -54,14 +70,19 @@ class Scanner(java.awt.event.ActionListener):
         try:
             for device in server.getDeviceList():
                 # modern clients (Engine Driver, WiThrottle app) use MultiThrottle
-                if device.multiThrottles is not None:
-                    for mt in device.multiThrottles.values():
-                        for tc in mt.throttles.values():
-                            _hook(tc.throttle)
+                mts = _get(device, 'multiThrottles')
+                if mts is not None:
+                    for mt in mts.values():
+                        tcs = _get(mt, 'throttles')
+                        if tcs is None:
+                            continue
+                        for tc in tcs.values():
+                            _hook(_get(tc, 'throttle'))
                 # legacy single-throttle protocol
-                for tc in (device.throttleController, device.secondThrottleController):
+                for tc in (_get(device, 'throttleController'),
+                           _get(device, 'secondThrottleController')):
                     if tc is not None:
-                        _hook(tc.throttle)
+                        _hook(_get(tc, 'throttle'))
         except java.util.ConcurrentModificationException:
             pass  # device list changed mid-scan; next tick catches it
 
