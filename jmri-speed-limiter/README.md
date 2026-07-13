@@ -6,11 +6,17 @@ forced back to it.
 
 ## Setup
 
-1. Edit `MAX_SPEED_STEP` in `SpeedLimiter.py` if 40 isn't what you want
-   (WiThrottle speed is 0-126 regardless of the decoder's speed-step mode).
+1. Per-loco limits: put a number 0-126 in the roster entry's **Model**
+   field (DecoderPro > edit entry). `126` = unlimited. Locos with no
+   roster entry, or an empty/non-numeric Model field, get the default of
+   40 (`DEFAULT_MAX_STEP` in `SpeedLimiter.py`).
 2. Run it once per JMRI session: **Scripting > Run Script**, or add it as a
    startup action (**Preferences > Start Up > Add > Run Script**) so it's
    always active.
+
+WiThrottle speed is 0-126 steps regardless of the decoder's speed-step
+mode. Roster edits take effect the next time a loco is selected on a
+throttle, not while it's already held.
 
 ## How it works
 
